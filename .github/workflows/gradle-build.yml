@@ -15,6 +15,10 @@ on:
 
 permissions:
   contents: read
+  
+env:
+  USERNAME: ${{ github.actor }}
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:

@@ -39,7 +39,7 @@ dependencies {
     implementation("dev.kord:kord-core:$kordVersion")
 
     //skaard dependencies
-    implementation("su.skaard:core:0.0.2")
+    api("su.skaard:core:0.0.3")
 
     testImplementation("io.mockk:mockk-jvm:1.13.2")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")

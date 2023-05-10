@@ -8,7 +8,6 @@ val kordVersion: String by project
 plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
-    kotlin("plugin.jpa")
     kotlin("jvm")
     kotlin("plugin.spring")
 }
@@ -34,13 +33,5 @@ dependencies {
     //skaard dependencies
     implementation(project(":template-module"))
 
-    testImplementation("io.mockk:mockk-jvm:1.13.2")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    runtimeOnly("org.postgresql:postgresql:42.3.8")
 }
-
-tasks.test {
-    useJUnitPlatform()
-}
-
-

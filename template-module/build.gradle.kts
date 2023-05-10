@@ -1,4 +1,4 @@
-group = "com.example.skaard"
+group = rootProject.group
 version = rootProject.version
 
 val kotlinVersion: String by project

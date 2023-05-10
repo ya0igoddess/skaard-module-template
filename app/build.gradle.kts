@@ -13,7 +13,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { //the repository with core module
-        url = uri("https://maven.pkg.github.com/ya0igoddess/${project.name}")
+        url = uri("https://maven.pkg.github.com/ya0igoddess/skaard")
         credentials {
             username = System.getenv("USERNAME")
             password = System.getenv("TOKEN")
